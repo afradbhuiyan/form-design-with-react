@@ -1,0 +1,10 @@
+step-1
+ * Install React Router (c)
+ * Install tailwindcss and other stuffs (c)
+ * Install require fonts  (c)
+ * setup colors, fonts, container in tailwind configration (c)
+ * Compile tailwindcss (c)
+ * Install fontawesome icon(c)
+ 
+step-2
+ * create AppLayout 
