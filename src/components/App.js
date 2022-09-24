@@ -1,16 +1,26 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { solid } from '@fortawesome/fontawesome-svg-core/import.macro';
+import { Routes, Route } from 'react-router-dom';
+//pages
+import Login from './pages/Login';
+import Home from './pages/Home';
+
+//layouts
+import AppLayout from './layouts/AppLayout';
+
+//styles
 import './../assets/css/App.css';
 
 function App() {
 
      return (
           <>
-               <div className="container">
-                    <h1 className='text-center'>
-                         Hello World (<FontAwesomeIcon icon={solid('user')} />)
-                    </h1>
-               </div>
+               <AppLayout>
+                    <Routes>
+                         <Route path='/' element={ <Home />} />
+                         <Route path='/about' element={ <Home />} />
+                         <Route path='/contact' element={ <Home />} />
+                         <Route path='/login' element={ <Login />} />
+                    </Routes>
+               </AppLayout>
           </>
      )
      
